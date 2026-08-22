@@ -1,0 +1,1401 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="一份关于英美保守主义思想谱系、核心观念与代表人物的中文导览。">
+  <meta name="theme-color" content="#10253f">
+  <meta property="og:title" content="秩序与自由｜英美保守主义思想导览">
+  <meta property="og:description" content="从伯克到柯克：理解传统、自由、法治与审慎的思想谱系。">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='32' fill='%2310253f'/%3E%3Ccircle cx='32' cy='32' r='23' fill='none' stroke='%23b18a4a' stroke-width='2'/%3E%3Ctext x='32' y='42' text-anchor='middle' font-size='29' fill='%23f3efe5'%3E序%3C/text%3E%3C/svg%3E">
+  <title>秩序与自由｜英美保守主义思想导览</title>
+  <style>
+    :root {
+      --ink: #152131;
+      --navy: #10253f;
+      --navy-light: #254360;
+      --wine: #7c2638;
+      --gold: #b18a4a;
+      --paper: #f3efe5;
+      --paper-light: #faf8f2;
+      --muted: #697079;
+      --line: #d7cdbb;
+      --white: #fffefa;
+      --shadow: 0 18px 48px rgba(16, 37, 63, .1);
+      --serif: "Noto Serif SC", "Source Han Serif SC", "Songti SC", "STSong", Georgia, serif;
+      --sans: Inter, "Noto Sans SC", "Microsoft YaHei", sans-serif;
+      --content: 1180px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: 88px;
+    }
+
+    body {
+      margin: 0;
+      color: var(--ink);
+      background:
+        radial-gradient(circle at 15% 5%, rgba(177, 138, 74, .07), transparent 25rem),
+        var(--paper);
+      font-family: var(--serif);
+      line-height: 1.8;
+      text-rendering: optimizeLegibility;
+    }
+
+    body::before {
+      position: fixed;
+      inset: 0;
+      z-index: -1;
+      pointer-events: none;
+      opacity: .2;
+      content: "";
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.12'/%3E%3C/svg%3E");
+    }
+
+    a {
+      color: inherit;
+      text-decoration-thickness: 1px;
+      text-underline-offset: .2em;
+    }
+
+    a:focus-visible,
+    button:focus-visible {
+      outline: 3px solid var(--gold);
+      outline-offset: 4px;
+    }
+
+    button {
+      font: inherit;
+    }
+
+    .skip-link {
+      position: fixed;
+      top: 8px;
+      left: 8px;
+      z-index: 100;
+      padding: .55rem .9rem;
+      color: var(--white);
+      background: var(--wine);
+      transform: translateY(-150%);
+    }
+
+    .skip-link:focus {
+      transform: translateY(0);
+    }
+
+    .container {
+      width: min(calc(100% - 48px), var(--content));
+      margin-inline: auto;
+    }
+
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      color: var(--white);
+      background: rgba(16, 37, 63, .97);
+      border-bottom: 1px solid rgba(255, 255, 255, .12);
+      backdrop-filter: blur(12px);
+    }
+
+    .nav-wrap {
+      display: flex;
+      min-height: 68px;
+      align-items: center;
+      justify-content: space-between;
+      gap: 2rem;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: .8rem;
+      font-weight: 700;
+      text-decoration: none;
+      letter-spacing: .14em;
+      white-space: nowrap;
+    }
+
+    .brand-mark {
+      display: grid;
+      width: 34px;
+      height: 34px;
+      place-items: center;
+      border: 1px solid var(--gold);
+      border-radius: 50%;
+      color: var(--gold);
+      font-size: .77rem;
+      letter-spacing: 0;
+    }
+
+    .site-nav {
+      display: flex;
+      align-items: center;
+      gap: 1.5rem;
+      font-family: var(--sans);
+      font-size: .86rem;
+    }
+
+    .site-nav a {
+      position: relative;
+      color: rgba(255, 254, 250, .76);
+      text-decoration: none;
+    }
+
+    .site-nav a::after {
+      position: absolute;
+      right: 0;
+      bottom: -.45rem;
+      left: 0;
+      height: 1px;
+      content: "";
+      background: var(--gold);
+      transform: scaleX(0);
+      transition: transform .2s ease;
+    }
+
+    .site-nav a:hover,
+    .site-nav a[aria-current="true"] {
+      color: var(--white);
+    }
+
+    .site-nav a:hover::after,
+    .site-nav a[aria-current="true"]::after {
+      transform: scaleX(1);
+    }
+
+    .menu-toggle {
+      display: none;
+      width: 42px;
+      height: 42px;
+      padding: 9px;
+      cursor: pointer;
+      border: 1px solid rgba(255, 255, 255, .3);
+      background: transparent;
+    }
+
+    .menu-toggle span {
+      display: block;
+      height: 1px;
+      margin: 5px 0;
+      background: var(--white);
+      transition: .2s ease;
+    }
+
+    .hero {
+      position: relative;
+      min-height: min(760px, calc(100vh - 68px));
+      overflow: hidden;
+      color: var(--white);
+      background:
+        linear-gradient(90deg, rgba(10, 29, 49, .99) 0%, rgba(16, 37, 63, .94) 54%, rgba(22, 49, 75, .8) 100%),
+        var(--navy);
+    }
+
+    .hero::before,
+    .hero::after {
+      position: absolute;
+      content: "";
+      border: 1px solid rgba(177, 138, 74, .22);
+      border-radius: 50%;
+    }
+
+    .hero::before {
+      top: -250px;
+      right: -90px;
+      width: 640px;
+      height: 640px;
+      box-shadow: 0 0 0 70px rgba(177, 138, 74, .035), 0 0 0 140px rgba(177, 138, 74, .025);
+    }
+
+    .hero::after {
+      right: 280px;
+      bottom: -200px;
+      width: 390px;
+      height: 390px;
+    }
+
+    .hero-grid {
+      position: relative;
+      z-index: 1;
+      display: grid;
+      min-height: min(760px, calc(100vh - 68px));
+      align-items: center;
+      grid-template-columns: minmax(0, 1.35fr) minmax(280px, .65fr);
+      gap: 6rem;
+      padding-block: 5rem;
+    }
+
+    .eyebrow {
+      display: flex;
+      align-items: center;
+      gap: .8rem;
+      margin: 0 0 1.2rem;
+      color: var(--gold);
+      font-family: var(--sans);
+      font-size: .75rem;
+      font-weight: 700;
+      letter-spacing: .24em;
+      text-transform: uppercase;
+    }
+
+    .eyebrow::before {
+      width: 38px;
+      height: 1px;
+      content: "";
+      background: currentColor;
+    }
+
+    .hero h1 {
+      max-width: 800px;
+      margin: 0;
+      font-size: clamp(3.3rem, 8vw, 7rem);
+      font-weight: 600;
+      line-height: 1.03;
+      letter-spacing: .04em;
+    }
+
+    .hero h1 span {
+      display: block;
+      margin-top: .4rem;
+      color: transparent;
+      font-size: .42em;
+      font-style: italic;
+      font-weight: 400;
+      letter-spacing: .04em;
+      -webkit-text-stroke: 1px rgba(255, 254, 250, .64);
+    }
+
+    .hero-intro {
+      max-width: 650px;
+      margin: 2rem 0 0;
+      color: rgba(255, 254, 250, .78);
+      font-size: clamp(1rem, 1.8vw, 1.2rem);
+    }
+
+    .hero-aside {
+      position: relative;
+      padding: 2rem 0 2rem 2rem;
+      border-left: 1px solid rgba(177, 138, 74, .54);
+    }
+
+    .hero-aside blockquote {
+      margin: 0;
+      font-size: clamp(1.2rem, 2.3vw, 1.7rem);
+      line-height: 1.65;
+    }
+
+    .hero-aside cite {
+      display: block;
+      margin-top: 1.2rem;
+      color: var(--gold);
+      font-family: var(--sans);
+      font-size: .78rem;
+      font-style: normal;
+      letter-spacing: .08em;
+    }
+
+    .hero-scroll {
+      position: absolute;
+      bottom: 2rem;
+      left: 50%;
+      z-index: 2;
+      display: flex;
+      align-items: center;
+      gap: .7rem;
+      color: rgba(255, 255, 255, .55);
+      font-family: var(--sans);
+      font-size: .7rem;
+      letter-spacing: .15em;
+      text-decoration: none;
+      transform: translateX(-50%);
+    }
+
+    .hero-scroll::before {
+      width: 1px;
+      height: 34px;
+      content: "";
+      background: var(--gold);
+    }
+
+    main {
+      overflow: hidden;
+    }
+
+    .section {
+      padding-block: 7.5rem;
+    }
+
+    .section-light {
+      background: var(--paper-light);
+    }
+
+    .section-dark {
+      color: var(--white);
+      background: var(--navy);
+    }
+
+    .section-heading {
+      display: grid;
+      align-items: end;
+      grid-template-columns: 1fr 1fr;
+      gap: 3rem;
+      margin-bottom: 4.2rem;
+    }
+
+    .kicker {
+      display: block;
+      margin-bottom: .7rem;
+      color: var(--wine);
+      font-family: var(--sans);
+      font-size: .72rem;
+      font-weight: 700;
+      letter-spacing: .2em;
+      text-transform: uppercase;
+    }
+
+    .section-dark .kicker {
+      color: var(--gold);
+    }
+
+    .section-heading h2 {
+      margin: 0;
+      font-size: clamp(2.2rem, 4.5vw, 4.1rem);
+      font-weight: 500;
+      line-height: 1.18;
+      letter-spacing: .03em;
+    }
+
+    .section-heading > p {
+      max-width: 520px;
+      margin: 0 0 .4rem auto;
+      color: var(--muted);
+      font-size: 1rem;
+    }
+
+    .section-dark .section-heading > p {
+      color: rgba(255, 254, 250, .65);
+    }
+
+    .lead-grid {
+      display: grid;
+      align-items: start;
+      grid-template-columns: .7fr 1.3fr;
+      gap: 6rem;
+    }
+
+    .dropcap {
+      margin: 0;
+      font-size: clamp(1.35rem, 2.4vw, 2rem);
+      line-height: 1.65;
+    }
+
+    .dropcap::first-letter {
+      float: left;
+      margin: .12em .12em 0 0;
+      color: var(--wine);
+      font-size: 4.8em;
+      line-height: .75;
+    }
+
+    .prose {
+      color: #49515b;
+      font-size: 1.05rem;
+    }
+
+    .prose p:first-child {
+      margin-top: 0;
+    }
+
+    .definition {
+      margin-top: 2rem;
+      padding: 1.3rem 1.5rem;
+      border-top: 1px solid var(--line);
+      border-bottom: 1px solid var(--line);
+      color: var(--navy);
+      font-size: .95rem;
+    }
+
+    .definition strong {
+      margin-right: .7rem;
+      color: var(--wine);
+      font-family: var(--sans);
+      font-size: .72rem;
+      letter-spacing: .14em;
+    }
+
+    .timeline {
+      position: relative;
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      margin-top: 2rem;
+    }
+
+    .timeline::before {
+      position: absolute;
+      top: 35px;
+      right: 0;
+      left: 0;
+      height: 1px;
+      content: "";
+      background: var(--line);
+    }
+
+    .timeline-item {
+      position: relative;
+      padding-right: 2rem;
+    }
+
+    .timeline-item::before {
+      position: relative;
+      z-index: 1;
+      display: block;
+      width: 9px;
+      height: 9px;
+      margin: 31px 0 2.2rem;
+      content: "";
+      background: var(--paper-light);
+      border: 2px solid var(--wine);
+      border-radius: 50%;
+      box-shadow: 0 0 0 7px var(--paper-light);
+    }
+
+    .year {
+      color: var(--wine);
+      font-family: var(--sans);
+      font-size: .78rem;
+      font-weight: 700;
+      letter-spacing: .12em;
+    }
+
+    .timeline-item h3 {
+      min-height: 3.4em;
+      margin: .65rem 0;
+      font-size: 1.12rem;
+      line-height: 1.55;
+    }
+
+    .timeline-item p {
+      margin: 0;
+      color: var(--muted);
+      font-size: .86rem;
+      line-height: 1.75;
+    }
+
+    .tradition-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1px;
+      overflow: hidden;
+      background: rgba(255, 255, 255, .14);
+      border: 1px solid rgba(255, 255, 255, .14);
+    }
+
+    .tradition-card {
+      min-height: 510px;
+      padding: clamp(2rem, 5vw, 4.5rem);
+      background: var(--navy);
+    }
+
+    .tradition-card:first-child {
+      background: #142b46;
+    }
+
+    .tradition-no {
+      color: var(--gold);
+      font-family: var(--sans);
+      font-size: .73rem;
+      letter-spacing: .16em;
+    }
+
+    .tradition-card h3 {
+      margin: 1.5rem 0 .4rem;
+      font-size: clamp(2rem, 4vw, 3.4rem);
+      font-weight: 500;
+    }
+
+    .tradition-en {
+      display: block;
+      color: rgba(255, 255, 255, .45);
+      font-family: var(--sans);
+      font-size: .75rem;
+      letter-spacing: .15em;
+      text-transform: uppercase;
+    }
+
+    .tradition-card > p {
+      margin: 2rem 0;
+      color: rgba(255, 255, 255, .68);
+    }
+
+    .tag-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: .6rem;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .tag-list li {
+      padding: .35rem .75rem;
+      border: 1px solid rgba(177, 138, 74, .5);
+      border-radius: 99px;
+      color: #ddc69f;
+      font-family: var(--sans);
+      font-size: .72rem;
+    }
+
+    .tradition-note {
+      max-width: 800px;
+      margin: 2.5rem auto 0;
+      color: rgba(255, 255, 255, .57);
+      font-size: .92rem;
+      text-align: center;
+    }
+
+    .principles-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      border-top: 1px solid var(--line);
+      border-left: 1px solid var(--line);
+    }
+
+    .principle {
+      min-height: 340px;
+      padding: 2.4rem 2rem;
+      background: rgba(255, 254, 250, .42);
+      border-right: 1px solid var(--line);
+      border-bottom: 1px solid var(--line);
+      transition: background .25s ease, transform .25s ease;
+    }
+
+    .principle:hover {
+      z-index: 1;
+      background: var(--white);
+      box-shadow: var(--shadow);
+      transform: translateY(-4px);
+    }
+
+    .principle-no {
+      color: var(--wine);
+      font-family: var(--sans);
+      font-size: .7rem;
+      font-weight: 700;
+    }
+
+    .principle h3 {
+      margin: 2rem 0 1rem;
+      color: var(--navy);
+      font-size: 1.45rem;
+      font-weight: 600;
+    }
+
+    .principle p {
+      margin: 0;
+      color: var(--muted);
+      font-size: .93rem;
+    }
+
+    .thinkers {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.2rem;
+    }
+
+    .thinker {
+      position: relative;
+      min-height: 380px;
+      padding: 2.2rem;
+      overflow: hidden;
+      color: var(--white);
+      background: linear-gradient(145deg, var(--navy-light), var(--navy));
+    }
+
+    .thinker::after {
+      position: absolute;
+      right: -55px;
+      bottom: -85px;
+      width: 190px;
+      height: 190px;
+      content: "";
+      border: 1px solid rgba(177, 138, 74, .23);
+      border-radius: 50%;
+    }
+
+    .thinker:nth-child(2),
+    .thinker:nth-child(5) {
+      background: linear-gradient(145deg, #7c2638, #521a28);
+    }
+
+    .thinker-initial {
+      display: grid;
+      width: 58px;
+      height: 58px;
+      place-items: center;
+      color: var(--gold);
+      border: 1px solid rgba(177, 138, 74, .65);
+      border-radius: 50%;
+      font-size: 1.1rem;
+      font-style: italic;
+    }
+
+    .thinker h3 {
+      margin: 2.2rem 0 .15rem;
+      font-size: 1.5rem;
+      font-weight: 500;
+    }
+
+    .thinker-name {
+      color: rgba(255, 255, 255, .48);
+      font-family: var(--sans);
+      font-size: .69rem;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+    }
+
+    .thinker p {
+      position: relative;
+      z-index: 1;
+      margin: 1.4rem 0 0;
+      color: rgba(255, 255, 255, .72);
+      font-size: .88rem;
+    }
+
+    .quote-section {
+      padding-block: 8rem;
+      color: var(--white);
+      background:
+        linear-gradient(rgba(16, 37, 63, .92), rgba(16, 37, 63, .96)),
+        repeating-linear-gradient(135deg, #1f3c59 0, #1f3c59 2px, #10253f 2px, #10253f 12px);
+      text-align: center;
+    }
+
+    .quote-mark {
+      color: var(--gold);
+      font-family: Georgia, serif;
+      font-size: 6rem;
+      line-height: .5;
+    }
+
+    .quote-section blockquote {
+      max-width: 920px;
+      margin: 2rem auto;
+      font-size: clamp(1.7rem, 3.8vw, 3.2rem);
+      line-height: 1.55;
+    }
+
+    .quote-section cite {
+      color: #d9c39c;
+      font-family: var(--sans);
+      font-size: .76rem;
+      font-style: normal;
+      letter-spacing: .08em;
+    }
+
+    .reading-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1rem;
+    }
+
+    .book {
+      display: grid;
+      grid-template-columns: 84px 1fr;
+      gap: 1.6rem;
+      padding: 1.8rem;
+      background: rgba(255, 254, 250, .55);
+      border: 1px solid var(--line);
+    }
+
+    .book-no {
+      display: grid;
+      height: 112px;
+      place-items: center;
+      color: var(--gold);
+      background: var(--navy);
+      border-left: 5px solid var(--wine);
+      font-family: var(--sans);
+      font-size: .75rem;
+    }
+
+    .book h3 {
+      margin: .1rem 0 .25rem;
+      color: var(--navy);
+      font-size: 1.13rem;
+    }
+
+    .book-author {
+      color: var(--wine);
+      font-family: var(--sans);
+      font-size: .72rem;
+      font-weight: 700;
+    }
+
+    .book p {
+      margin: .75rem 0 0;
+      color: var(--muted);
+      font-size: .84rem;
+      line-height: 1.65;
+    }
+
+    .editorial-note {
+      display: grid;
+      grid-template-columns: auto 1fr;
+      gap: 1.3rem;
+      max-width: 850px;
+      margin: 4rem auto 0;
+      padding-top: 2rem;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-size: .88rem;
+    }
+
+    .editorial-note strong {
+      color: var(--navy);
+      font-family: var(--sans);
+      font-size: .7rem;
+      letter-spacing: .14em;
+    }
+
+    .site-footer {
+      padding-block: 3.5rem;
+      color: rgba(255, 255, 255, .58);
+      background: #0a1a2b;
+      font-family: var(--sans);
+      font-size: .76rem;
+    }
+
+    .footer-grid {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      gap: 2rem;
+    }
+
+    .footer-title {
+      margin: 0 0 .4rem;
+      color: var(--white);
+      font-family: var(--serif);
+      font-size: 1.3rem;
+      letter-spacing: .1em;
+    }
+
+    .footer-grid p {
+      margin: 0;
+    }
+
+    .back-top {
+      color: var(--gold);
+      text-decoration: none;
+    }
+
+    .reveal {
+      opacity: 0;
+      transform: translateY(24px);
+      transition: opacity .7s ease, transform .7s ease;
+    }
+
+    .reveal.is-visible {
+      opacity: 1;
+      transform: none;
+    }
+
+    @media (max-width: 960px) {
+      .site-nav {
+        gap: 1rem;
+      }
+
+      .site-nav a:nth-last-child(-n+2) {
+        display: none;
+      }
+
+      .hero-grid {
+        grid-template-columns: 1fr;
+        gap: 2.5rem;
+      }
+
+      .hero-aside {
+        max-width: 560px;
+      }
+
+      .section-heading,
+      .lead-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+      }
+
+      .section-heading > p {
+        margin-left: 0;
+      }
+
+      .timeline {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem 0;
+      }
+
+      .timeline::before {
+        display: none;
+      }
+
+      .timeline-item::before {
+        margin-bottom: 1.2rem;
+      }
+
+      .principles-grid,
+      .thinkers {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 700px) {
+      html {
+        scroll-padding-top: 64px;
+      }
+
+      .container {
+        width: min(calc(100% - 32px), var(--content));
+      }
+
+      .nav-wrap {
+        min-height: 64px;
+      }
+
+      .menu-toggle {
+        display: block;
+      }
+
+      .site-nav {
+        position: absolute;
+        top: 64px;
+        right: 0;
+        left: 0;
+        display: none;
+        padding: 1.2rem 1rem 1.6rem;
+        align-items: stretch;
+        flex-direction: column;
+        gap: .25rem;
+        background: var(--navy);
+        border-top: 1px solid rgba(255, 255, 255, .12);
+      }
+
+      .site-nav.is-open {
+        display: flex;
+      }
+
+      .site-nav a,
+      .site-nav a:nth-last-child(-n+2) {
+        display: block;
+        padding: .65rem 1rem;
+      }
+
+      .menu-toggle[aria-expanded="true"] span:first-child {
+        transform: translateY(6px) rotate(45deg);
+      }
+
+      .menu-toggle[aria-expanded="true"] span:nth-child(2) {
+        opacity: 0;
+      }
+
+      .menu-toggle[aria-expanded="true"] span:last-child {
+        transform: translateY(-6px) rotate(-45deg);
+      }
+
+      .hero,
+      .hero-grid {
+        min-height: 720px;
+      }
+
+      .hero-grid {
+        padding-block: 4rem 7rem;
+      }
+
+      .hero h1 {
+        font-size: clamp(3rem, 17vw, 5rem);
+      }
+
+      .hero::before {
+        right: -330px;
+      }
+
+      .hero-aside {
+        padding: 1.2rem 0 1.2rem 1.2rem;
+      }
+
+      .section {
+        padding-block: 5rem;
+      }
+
+      .section-heading {
+        margin-bottom: 2.7rem;
+      }
+
+      .timeline,
+      .tradition-grid,
+      .principles-grid,
+      .thinkers,
+      .reading-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .timeline {
+        gap: 1.8rem;
+      }
+
+      .timeline-item {
+        padding: 0 0 1.8rem 1.8rem;
+        border-left: 1px solid var(--line);
+      }
+
+      .timeline-item::before {
+        position: absolute;
+        top: 5px;
+        left: -6px;
+        margin: 0;
+        box-shadow: 0 0 0 5px var(--paper-light);
+      }
+
+      .timeline-item h3 {
+        min-height: auto;
+      }
+
+      .tradition-card {
+        min-height: auto;
+      }
+
+      .principle {
+        min-height: auto;
+      }
+
+      .thinker {
+        min-height: 335px;
+      }
+
+      .book {
+        grid-template-columns: 62px 1fr;
+        gap: 1rem;
+        padding: 1.25rem;
+      }
+
+      .book-no {
+        height: 90px;
+      }
+
+      .footer-grid {
+        align-items: flex-start;
+        flex-direction: column;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html {
+        scroll-behavior: auto;
+      }
+
+      *,
+      *::before,
+      *::after {
+        scroll-behavior: auto !important;
+        transition-duration: .01ms !important;
+        animation-duration: .01ms !important;
+        animation-iteration-count: 1 !important;
+      }
+
+      .reveal {
+        opacity: 1;
+        transform: none;
+      }
+    }
+
+    @media print {
+      .site-header,
+      .hero-scroll,
+      .menu-toggle,
+      .back-top {
+        display: none;
+      }
+
+      .hero {
+        min-height: auto;
+        color: var(--ink);
+        background: none;
+      }
+
+      .hero-grid {
+        min-height: auto;
+      }
+
+      .hero h1 span {
+        color: var(--ink);
+        -webkit-text-stroke: 0;
+      }
+
+      .section,
+      .quote-section {
+        padding-block: 2rem;
+      }
+
+      .section-dark,
+      .quote-section,
+      .thinker,
+      .tradition-card {
+        color: var(--ink);
+        background: none;
+      }
+
+      .reveal {
+        opacity: 1;
+        transform: none;
+      }
+    }
+  </style>
+</head>
+<body id="top">
+  <a class="skip-link" href="#main-content">跳至主要内容</a>
+
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="#top" aria-label="返回首页">
+        <span class="brand-mark" aria-hidden="true">序</span>
+        <span>秩序与自由</span>
+      </a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="打开导航菜单">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="site-nav" id="site-nav" aria-label="主要导航">
+        <a href="#introduction">导论</a>
+        <a href="#history">历史</a>
+        <a href="#traditions">两种传统</a>
+        <a href="#principles">核心观念</a>
+        <a href="#thinkers">代表人物</a>
+        <a href="#reading">延伸阅读</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="container hero-grid">
+        <div>
+          <p class="eyebrow">A guide to Anglo-American conservatism</p>
+          <h1 id="hero-title">秩序与自由<span>英美保守主义思想导览</span></h1>
+          <p class="hero-intro">保守主义并非一套封闭的教条，而是一种面对变革的政治气质：珍视经由时间检验的制度，以审慎约束权力，并在秩序之中保存自由。</p>
+        </div>
+        <aside class="hero-aside" aria-label="经典引言">
+          <blockquote>“一个不知道如何继承的国家，也不知道如何获得。”</blockquote>
+          <cite>— 埃德蒙·伯克，《法国革命之反思》，1790</cite>
+        </aside>
+      </div>
+      <a class="hero-scroll" href="#introduction">向下阅读</a>
+    </section>
+
+    <section class="section" id="introduction" aria-labelledby="introduction-title">
+      <div class="container">
+        <div class="section-heading reveal">
+          <div>
+            <span class="kicker">01 / Introduction</span>
+            <h2 id="introduction-title">一种思想传统，<br>而非现成公式</h2>
+          </div>
+          <p>从英国的经验主义与普通法传统，到美国的宪政主义与地方自治，英美保守主义始终在延续与革新之间寻找尺度。</p>
+        </div>
+        <div class="lead-grid reveal">
+          <p class="dropcap">保守主义首先是一种关于人、社会与政治限度的认识。它怀疑抽象理性能够从零设计完美社会，也警惕善意的权力在缺少约束时造成破坏。</p>
+          <div class="prose">
+            <p>与拒绝一切变化不同，英美保守主义通常承认改革的必要，却主张改革应当扎根于既有制度、习俗与共同体经验。传统并非因为古老而自动正确；它的意义在于积累了个人无法独自掌握的社会知识。</p>
+            <p>这一传统内部从来不是整齐划一的。伯克式保守主义强调历史连续性，古典自由主义者重视市场与有限政府，社会保守主义关心宗教与道德秩序，宪政保守主义则聚焦权力分立和法治。它们彼此交叠，也时常争论。</p>
+            <div class="definition"><strong>理解提示</strong>本页讨论思想史上的“保守主义”，不等同于任何当代政党、竞选纲领或单一政策组合。</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-light" id="history" aria-labelledby="history-title">
+      <div class="container">
+        <div class="section-heading reveal">
+          <div>
+            <span class="kicker">02 / Genealogy</span>
+            <h2 id="history-title">思想谱系</h2>
+          </div>
+          <p>英美保守主义并非诞生于某个单一时刻。它在革命、工业化、民主扩张与冷战的冲击中不断重述自身。</p>
+        </div>
+        <div class="timeline reveal" aria-label="英美保守主义思想史时间线">
+          <article class="timeline-item">
+            <span class="year">1688</span>
+            <h3>光荣革命与有限君主制</h3>
+            <p>议会、普通法与既有权利共同约束王权，奠定“自由在制度中生长”的英国经验。</p>
+          </article>
+          <article class="timeline-item">
+            <span class="year">1790</span>
+            <h3>伯克回应法国革命</h3>
+            <p>《法国革命之反思》批评以抽象原则彻底重造社会，成为现代保守主义的经典文本。</p>
+          </article>
+          <article class="timeline-item">
+            <span class="year">1835</span>
+            <h3>托克维尔观察美国</h3>
+            <p>地方自治、结社生活与宗教习俗，被视为民主免于多数暴政的重要条件。</p>
+          </article>
+          <article class="timeline-item">
+            <span class="year">1944—53</span>
+            <h3>自由秩序的再申辩</h3>
+            <p>哈耶克《通往奴役之路》与柯克《保守主义思想》重塑战后英美保守主义语言。</p>
+          </article>
+          <article class="timeline-item">
+            <span class="year">1979—80</span>
+            <h3>政治实践的新联盟</h3>
+            <p>撒切尔与里根时代将市场自由、国家力量和社会传统组合为影响深远的新保守联盟。</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-dark" id="traditions" aria-labelledby="traditions-title">
+      <div class="container">
+        <div class="section-heading reveal">
+          <div>
+            <span class="kicker">03 / Two Traditions</span>
+            <h2 id="traditions-title">同源而不同声</h2>
+          </div>
+          <p>英国与美国共享普通法、基督教伦理和宪政遗产，却因各自的历史经验形成不同重心。</p>
+        </div>
+        <div class="tradition-grid reveal">
+          <article class="tradition-card">
+            <span class="tradition-no">TRADITION I</span>
+            <h3>英国传统</h3>
+            <span class="tradition-en">The British Inheritance</span>
+            <p>强调历史连续性、渐进改革与制度的默会智慧。政治并非追求终极目的的工程，而是不同世代之间维持秩序、修补缺陷的持续实践。</p>
+            <ul class="tag-list" aria-label="英国传统关键词">
+              <li>普通法</li><li>经验主义</li><li>渐进改革</li><li>社会义务</li>
+            </ul>
+          </article>
+          <article class="tradition-card">
+            <span class="tradition-no">TRADITION II</span>
+            <h3>美国传统</h3>
+            <span class="tradition-en">The American Settlement</span>
+            <p>以成文宪法、自然权利、联邦制和地方自治为核心。它试图在个人自由与共和德性之间，在有限政府与强大国家之间保持张力。</p>
+            <ul class="tag-list" aria-label="美国传统关键词">
+              <li>宪政主义</li><li>联邦制</li><li>自然权利</li><li>公民社会</li>
+            </ul>
+          </article>
+        </div>
+        <p class="tradition-note reveal">这种区分是理解路径，而非绝对边界：英国也有自由市场传统，美国也深受伯克的历史主义影响。</p>
+      </div>
+    </section>
+
+    <section class="section" id="principles" aria-labelledby="principles-title">
+      <div class="container">
+        <div class="section-heading reveal">
+          <div>
+            <span class="kicker">04 / Principles</span>
+            <h2 id="principles-title">六个核心观念</h2>
+          </div>
+          <p>这些观念构成一组彼此制衡的政治语汇。它们不是不可质疑的信条，而是判断公共事务时反复出现的坐标。</p>
+        </div>
+        <div class="principles-grid reveal">
+          <article class="principle">
+            <span class="principle-no">01</span>
+            <h3>传统与继承</h3>
+            <p>制度、礼俗和社会规范承载跨世代形成的知识。继承并不排斥批判，而是要求改革者先理解一项制度为何存在。</p>
+          </article>
+          <article class="principle">
+            <span class="principle-no">02</span>
+            <h3>审慎与渐进</h3>
+            <p>政治决策面对复杂且不可逆的后果。审慎意味着比较现实选项，在修正不公时避免摧毁维持合作的条件。</p>
+          </article>
+          <article class="principle">
+            <span class="principle-no">03</span>
+            <h3>自由与法治</h3>
+            <p>自由不是脱离一切约束，而是在稳定、普遍且可预期的法律之下免受任意权力支配。</p>
+          </article>
+          <article class="principle">
+            <span class="principle-no">04</span>
+            <h3>有限政府</h3>
+            <p>人的知识和德性皆有局限，因此权力必须被宪法、分权和程序约束；善意不能替代制度制衡。</p>
+          </article>
+          <article class="principle">
+            <span class="principle-no">05</span>
+            <h3>共同体与中间组织</h3>
+            <p>家庭、教会、社团、地方政府等中间组织连接个人与国家，是信任、责任和自治能力的学校。</p>
+          </article>
+          <article class="principle">
+            <span class="principle-no">06</span>
+            <h3>财产与自发秩序</h3>
+            <p>私有财产为个人独立提供基础，市场则协调分散知识；二者仍须置于法律和社会责任之中。</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-light" id="thinkers" aria-labelledby="thinkers-title">
+      <div class="container">
+        <div class="section-heading reveal">
+          <div>
+            <span class="kicker">05 / Thinkers</span>
+            <h2 id="thinkers-title">代表人物</h2>
+          </div>
+          <p>他们并不都自称“保守主义者”，彼此也存在重大分歧；但共同塑造了英美保守思想的基本问题与语言。</p>
+        </div>
+        <div class="thinkers reveal">
+          <article class="thinker">
+            <span class="thinker-initial" aria-hidden="true">EB</span>
+            <h3>埃德蒙·伯克</h3>
+            <span class="thinker-name">Edmund Burke · 1729–1797</span>
+            <p>将社会理解为生者、逝者与未生者之间的契约，主张在历史延续中进行有节制的改革。</p>
+          </article>
+          <article class="thinker">
+            <span class="thinker-initial" aria-hidden="true">AT</span>
+            <h3>亚历西斯·德·托克维尔</h3>
+            <span class="thinker-name">Alexis de Tocqueville · 1805–1859</span>
+            <p>揭示民主的力量及其风险，强调结社、地方自治和宗教习俗对自由社会的支撑。</p>
+          </article>
+          <article class="thinker">
+            <span class="thinker-initial" aria-hidden="true">MO</span>
+            <h3>迈克尔·奥克肖特</h3>
+            <span class="thinker-name">Michael Oakeshott · 1901–1990</span>
+            <p>反对把政治化约为实现蓝图的技术，认为政治更像在无岸无港的大海上航行。</p>
+          </article>
+          <article class="thinker">
+            <span class="thinker-initial" aria-hidden="true">FH</span>
+            <h3>弗里德里希·哈耶克</h3>
+            <span class="thinker-name">F. A. Hayek · 1899–1992</span>
+            <p>从知识分散出发捍卫市场、法治和自发秩序，同时与传统保守主义保持复杂距离。</p>
+          </article>
+          <article class="thinker">
+            <span class="thinker-initial" aria-hidden="true">RK</span>
+            <h3>拉塞尔·柯克</h3>
+            <span class="thinker-name">Russell Kirk · 1918–1994</span>
+            <p>在美国重建伯克式思想谱系，以“恒久事物”、道德想象和审慎为保守主义赋予文化语言。</p>
+          </article>
+          <article class="thinker">
+            <span class="thinker-initial" aria-hidden="true">KS</span>
+            <h3>罗杰·斯克鲁顿</h3>
+            <span class="thinker-name">Roger Scruton · 1944–2020</span>
+            <p>从家园感、忠诚与美学经验出发，讨论人们为何依恋具体共同体及其生活形式。</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="quote-section" aria-label="伯克经典引文">
+      <div class="container reveal">
+        <div class="quote-mark" aria-hidden="true">“</div>
+        <blockquote>改革若要保存其效用，就必须尊重国家的本性；变革的手段，可以成为保存的手段。</blockquote>
+        <cite>埃德蒙·伯克，《致一位贵族的信》，1796（据原意译）</cite>
+      </div>
+    </section>
+
+    <section class="section" id="reading" aria-labelledby="reading-title">
+      <div class="container">
+        <div class="section-heading reveal">
+          <div>
+            <span class="kicker">06 / Reading</span>
+            <h2 id="reading-title">从经典开始</h2>
+          </div>
+          <p>保守主义内部争论众多。将经典文本放回其历史处境，并与批评者对读，往往比寻找一份标准答案更有收获。</p>
+        </div>
+        <div class="reading-grid reveal">
+          <article class="book">
+            <span class="book-no">1790</span>
+            <div><h3>《法国革命之反思》</h3><span class="book-author">埃德蒙·伯克</span><p>理解传统、偏见、财产和政治审慎的奠基性文本。</p></div>
+          </article>
+          <article class="book">
+            <span class="book-no">1835</span>
+            <div><h3>《论美国的民主》</h3><span class="book-author">托克维尔</span><p>观察民主社会中的平等、自治、宗教与多数权力。</p></div>
+          </article>
+          <article class="book">
+            <span class="book-no">1944</span>
+            <div><h3>《通往奴役之路》</h3><span class="book-author">弗里德里希·哈耶克</span><p>从计划、知识与法治的关系讨论自由社会的制度基础。</p></div>
+          </article>
+          <article class="book">
+            <span class="book-no">1953</span>
+            <div><h3>《保守主义思想》</h3><span class="book-author">拉塞尔·柯克</span><p>追溯伯克以来英美保守主义的主要人物与持续主题。</p></div>
+          </article>
+        </div>
+        <aside class="editorial-note reveal">
+          <strong>编者说明</strong>
+          <span>本页是一份思想史入门，不为任何政治立场背书。人物归类与中文引文均服务于导览；深入研究时，请查阅可靠版本的原著、历史语境与不同学派的批评。</span>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <p class="footer-title">秩序与自由</p>
+        <p>英美保守主义思想导览 · 仅供教育与研究参考</p>
+      </div>
+      <a class="back-top" href="#top">返回顶部 ↑</a>
+    </div>
+  </footer>
+
+  <script>
+    (() => {
+      const menuButton = document.querySelector(".menu-toggle");
+      const navigation = document.querySelector(".site-nav");
+      const navLinks = [...navigation.querySelectorAll("a")];
+
+      const closeMenu = () => {
+        menuButton.setAttribute("aria-expanded", "false");
+        menuButton.setAttribute("aria-label", "打开导航菜单");
+        navigation.classList.remove("is-open");
+      };
+
+      menuButton.addEventListener("click", () => {
+        const isOpen = menuButton.getAttribute("aria-expanded") === "true";
+        menuButton.setAttribute("aria-expanded", String(!isOpen));
+        menuButton.setAttribute("aria-label", isOpen ? "打开导航菜单" : "关闭导航菜单");
+        navigation.classList.toggle("is-open", !isOpen);
+      });
+
+      navLinks.forEach((link) => link.addEventListener("click", closeMenu));
+      document.addEventListener("keydown", (event) => {
+        if (event.key === "Escape") {
+          closeMenu();
+          menuButton.focus();
+        }
+      });
+
+      const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+      const revealItems = document.querySelectorAll(".reveal");
+
+      if (reducedMotion || !("IntersectionObserver" in window)) {
+        revealItems.forEach((item) => item.classList.add("is-visible"));
+      } else {
+        const revealObserver = new IntersectionObserver((entries, observer) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("is-visible");
+              observer.unobserve(entry.target);
+            }
+          });
+        }, { threshold: 0.12 });
+        revealItems.forEach((item) => revealObserver.observe(item));
+      }
+
+      const sections = navLinks
+        .map((link) => document.querySelector(link.getAttribute("href")))
+        .filter(Boolean);
+
+      if ("IntersectionObserver" in window) {
+        const sectionObserver = new IntersectionObserver((entries) => {
+          entries.forEach((entry) => {
+            if (!entry.isIntersecting) return;
+            navLinks.forEach((link) => {
+              const active = link.getAttribute("href") === `#${entry.target.id}`;
+              if (active) link.setAttribute("aria-current", "true");
+              else link.removeAttribute("aria-current");
+            });
+          });
+        }, { rootMargin: "-25% 0px -65% 0px" });
+        sections.forEach((section) => sectionObserver.observe(section));
+      }
+    })();
+  </script>
+</body>
+</html>
